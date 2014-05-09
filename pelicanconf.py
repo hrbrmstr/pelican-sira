@@ -5,10 +5,10 @@ from __future__ import unicode_literals
 AUTHOR = u'SIRA'
 
 SITENAME = u'Society of Information Risk Analysts'
-SITEURL = 'http://dds.ec/sirastg'
-# SITEURL = 'http://localhost:8000/sirastg'
+# SITEURL = 'http://dds.ec/sirastg'
+SITEURL = 'http://localhost:8000/sirastg'
 SITELOGO = 'images/sira-logo.png'
-SITELOGO_SIZE = '75'
+SITELOGO_SIZE = '40'
 
 TIMEZONE = 'America/New_York'
 
@@ -28,7 +28,7 @@ DISPLAY_TAGS_ON_SIDEBAR = True
 
 THEME = "pelican-themes/tuxlite_tbs"
 PLUGIN_PATH = "plugins"
-PATH = "blog/content/"
+PATH = "../blog/content/"
 
 PAGE_URL = u'pages/{slug}.html'
 PAGE_SAVE_AS = u'pages/{slug}.html'
@@ -50,7 +50,7 @@ CATEGORIES_SAVE_AS = 'categories.html'
 CUSTOM_CSS = 'static/custom.css'
 # Tell Pelican to add 'extra/custom.css' to the output dir
 STATIC_PATHS = ['images', 'extra/custom.css']
-OUTPUT_PATH = 'output'
+OUTPUT_PATH = '../output'
 
 # Tell Pelican to change the path to 'static/custom.css' in the output dir
 EXTRA_PATH_METADATA = {
