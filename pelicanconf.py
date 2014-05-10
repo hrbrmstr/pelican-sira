@@ -6,7 +6,8 @@ AUTHOR = u'SIRA'
 
 SITENAME = u'Society of Information Risk Analysts'
 # SITEURL = 'http://dds.ec/sirastg'
-SITEURL = 'http://localhost:8000/stg'
+# SITEURL = 'http://localhost:8000/stg'
+SITEURL = 'https://www.societyinforisk.org/stg'
 SITELOGO = 'images/sira-logo.png'
 SITELOGO_SIZE = '40'
 
@@ -52,7 +53,8 @@ CATEGORIES_SAVE_AS = 'categories.html'
 CUSTOM_CSS = 'static/custom.css'
 # Tell Pelican to add 'extra/custom.css' to the output dir
 STATIC_PATHS = ['images', 'extra/custom.css']
-OUTPUT_PATH = '../output'
+#OUTPUT_PATH = '../output'
+OUTPUT_PATH = '/var/www/societyinforisk/stg'
 
 # Tell Pelican to change the path to 'static/custom.css' in the output dir
 EXTRA_PATH_METADATA = {
