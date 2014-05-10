@@ -37,9 +37,6 @@ body {
   font-family: 'Droid Serif', "Helvetica Neue",Helvetica,Arial, serif;
   font-size: 100%; 
 }
-p { font-size: 100%; line-height: 1.6em; margin-top: 0.8em; margin-bottom: 0.8em; }
-li { line-height: 1.6em; }
-h3 { margin-top: 2.5em; }
 .table th, .table td { line-height: 1.3em; }
 
 h1              { font-size: 2em; margin: .67em 0 }
@@ -51,13 +48,18 @@ h6              { font-size: .75em; margin: 1.67em 0 }
 h1, h2, h3, h4,
 h5, h6          { font-weight: 700; font-family: 'Ubuntu', sans-serif; }
 
+h3 { margin-top: 1.6em; margin-bottom: 0.5em;}
+h2 { margin-top: 1.5em; margin-bottom: 0.5em;}
 
 p {
     font-family: 'Droid Serif', serif;
-    font-size: 15px;
-    line-height: 23px;
-    margin: 0 0 23px 0;
-    }
+    font-size: 1em;
+    line-height: 1.5em; 
+    margin-top: 0.8em; 
+    margin-bottom: 0.8em;
+  }
+    
+li { line-height: 1.5em; }
     
 .navbar .nav > li > a {
   font-family: 'Ubuntu', sans-serif;        

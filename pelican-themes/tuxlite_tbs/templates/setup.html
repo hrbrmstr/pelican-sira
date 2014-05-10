@@ -4,7 +4,6 @@
 
 {% if articles %}
 {% for article in articles_page.object_list %}
-{% if article.category|lower == "news" %}        
 
 {# First item #}
 {% if loop.first and not articles_page.has_previous() %}
@@ -37,8 +36,6 @@
     {% endif %}
 
 {% endif %} {# First item if #}
-
-{% endif %} {# Riskblog category if #}
 
 {% endfor %} {# For article #}
 {% endif %} {# If articles #}
