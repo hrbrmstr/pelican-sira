@@ -21,7 +21,11 @@ def clean():
         local('rm -rf {deploy_path}'.format(**env))
         local('mkdir {deploy_path}'.format(**env))
 
+def localbuild():
+    local('pelican -s pelicanconf.py')
+
 def build():
+    local('cd /home/hrbrmstr/site/blog && git pull')
     local('pelican -s pelicanconf.py')
 
 def rebuild():

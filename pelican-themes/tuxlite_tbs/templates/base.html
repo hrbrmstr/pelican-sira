@@ -18,13 +18,28 @@
     <link href="{{ SITEURL }}/theme/bootstrap.min.responsive.css" rel="stylesheet">
     <link href="{{ SITEURL }}/theme/local.css" rel="stylesheet">
     <link href="{{ SITEURL }}/theme/pygments.css" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Droid+Serif:400,700italic" rel="stylesheet" type="text/css" />
+
+    <style>
+    .content {
+      padding-top: 60px;
+    }
+    @media(max-width: 1199px) {
+      .content {
+        padding-top: 100px;
+      }
+    }
+    @media(max-width: 980px) {
+      .content {
+        padding-top: 0px;
+      }
+    }
+    </style>
 
 </head>
 
 <body>
 
-<div class="navbar">
+<div class="navbar navbar-default navbar-fixed-top">
 
     <div class="navbar-inner">
       <img src="{{ SITEURL }}/images/sira-logo.png" style="margin:0; padding:0 position:fixed; top:0px; right:0px; z-index:-1; float:right"/>
@@ -88,7 +103,7 @@
                 </li>
             
                 <li><a href="{{ SITEURL }}/pages/contact-mgmt.html">Contact the Management Team</a>
-                <li><a href="http://to.do/">Contact the iRMBOK Team</a>
+                <li><a href="http://lists.societyinforisk.org/mailman/listinfo/sira-cbk">Contact the iRMBOK Team</a>
                 <li><a href="{{ SITEURL }}/pages/contact-riskblog.html">Risk Blog Registration</a>
                 <li><a href="{{ SITEURL }}/pages/contact-feedback.html">Web Site Feedback</a>
             </ul>
@@ -102,7 +117,7 @@
             
                 <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Site Archives</a>
                 <li><a href="{{ SITEURL }}/tags.html">Tags</a>
-                <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" rel="alternate">Atom feed</a></li>
+                <li><a href="/feeds/all.atom.xml" rel="alternate">Atom feed</a></li>
                 {% if FEED_RSS %}
                 <li><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" rel="alternate">RSS feed</a></li>
                 {% endif %}
@@ -156,6 +171,11 @@
             </ul>
             </div>
             {% endif %}
+
+            <div class="well" style="padding:0; background-color: white;">
+            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/societyinforisk" data-widget-id="468094196478251008">Tweets by @societyinforisk</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
 
 
             {% if SOCIAL %}

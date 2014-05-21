@@ -1,6 +1,94 @@
 {% extends "base.html" %}
 {% block content_title %}{% endblock %}
-{% block content %}        
+{% block content %}
+
+<style>
+.landing {
+  margin-top:40px; 
+  margin-right:20px; 
+  font-family: 'Ubuntu', sans-serif; 
+  font-size:15px; 
+  line-height:22px; 
+  color:white;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.landingparent {
+  position:relative;
+  margin-left:auto; 
+  margin-right:auto; 
+  max-width:100%; 
+  background-color: #aa8031; 
+  overflow:auto;
+}
+
+.landingimage {
+  width:400px; 
+  max-width:50%; 
+  padding-right:20px
+}
+
+.landingabout {
+  position:absolute; 
+  display:inline;
+  bottom:0%; 
+  right:0%; 
+  float:right; 
+  background-color:#2E435E; 
+  width:10%; 
+  padding:10px;
+  margin-top:10px;
+  margin-left:10px;
+  
+}
+@media(max-width: 1199px) {
+  .landing {
+    font-size:14px; 
+    line-height:16px; 
+  }
+  .landingparent {
+  }
+  .landingimage {
+    width:400px; 
+    max-width:50%; 
+  }
+  .landingabout {
+    font-size:12px; line-height:12px; 
+  }
+}
+
+@media(max-width: 980px) {
+  .landing {
+    clear:both;
+    font-size:14px; line-height:16px; 
+    margin-top:30px;
+  }
+  .landingparent {
+  }
+  .landingimage {
+    width:100%;
+    max-width:100%;
+  }
+  .landingabout {
+    font-size:10px; line-height:10px; 
+    display:none;
+    visibility:hidden;
+  }
+  .landingtext {
+    display:none;
+    visibility:hidden;
+  }
+}
+</style>
+
+<div class="landingparent" >
+  <img class="landingimage" src="{{ SITEURL }}/theme/images/ss1.png" align="left"/><p class="landing"><span class="landingtext">The Society of Information Risk Analysts, established in 2011, is the go-to resource for decision makers &amp; practitioners of information risk management.<br/>
+<br style="line-height:8px"/>
+As an emerging discipline, information risk management benefits from open dialogue and exchange of ideas; SIRA provides a forum where members can build meaningful, professional relationships that keep them at the top of their profession, explore the most important risk management challenges facing their organizations, &amp; discover how methods from other risk management disciplines can help them meet information risk challenges. Welcome!</p></span>
+<div class="landingabout"><center><a href="https://www.societyinforisk.org/pages/about-sira.html" style="color:white">About SIRA</a></center></div>
+</div>
+<br style="clear:both"/>
 
 {% if articles %}
 {% for article in articles_page.object_list %}

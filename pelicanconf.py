@@ -7,7 +7,7 @@ AUTHOR = u'SIRA'
 SITENAME = u'Society of Information Risk Analysts'
 # SITEURL = 'http://dds.ec/sirastg'
 # SITEURL = 'http://localhost:8000/stg'
-SITEURL = 'https://www.societyinforisk.org/stg'
+SITEURL = 'https://www.societyinforisk.org/'
 SITELOGO = 'images/sira-logo.png'
 SITELOGO_SIZE = '40'
 
